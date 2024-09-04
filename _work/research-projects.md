@@ -10,8 +10,9 @@ location: "county, city"
 
 This is a description of a teaching experience. You can use markdown like any other post.
 
-Heading 1
+Binary Visualization for Detecting Benign & Malicious Files
 ======
+*Using a machine learning model to train a neural network to be able to distinguish between malicious & benign PDFs through a binary visualization representation.* 
 
 Heading 2
 ======

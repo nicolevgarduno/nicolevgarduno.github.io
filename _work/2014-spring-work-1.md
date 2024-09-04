@@ -4,6 +4,8 @@ collection: work
 type: "Career"
 permalink: /work/2014-spring-work-1
 ---
+I have had the opportunity to work at a few companies to showcase my cybersecurity skills. I am currently open to internship opportunities where I can highligth my skills in machine learning and security.
+
 ### Technology Support Intern at BlueCross BlueShield Alabama
 
 *May 2024 - June 2024* 

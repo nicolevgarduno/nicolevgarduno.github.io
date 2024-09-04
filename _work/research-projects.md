@@ -5,6 +5,8 @@ type: "Workshop"
 permalink: /work/research-projects
 location: "county, city"
 ---
+During my undergraduate experience, I had the opportunity to contribute to multiple projects. Now, my research focus is on bridging artifical intelligence and information security.
+
 ### Binary Visualization for Detecting Benign & Malicious Files
 
 *Using a machine learning model to train a neural network to be able to distinguish between malicious & benign PDFs through a binary visualization representation.* 

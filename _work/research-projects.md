@@ -1,5 +1,5 @@
 ---
-title: "Research"
+title: #"Research"
 collection: work
 type: "Workshop"
 permalink: /work/research-projects

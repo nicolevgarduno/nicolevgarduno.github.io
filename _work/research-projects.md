@@ -8,8 +8,6 @@ date: 2024-01-01
 location: "county, city"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
 Binary Visualization for Detecting Benign & Malicious Files
 ======
 *Using a machine learning model to train a neural network to be able to distinguish between malicious & benign PDFs through a binary visualization representation.* 

@@ -9,7 +9,7 @@ main:
     url: /publications/
 
   - title: "Photography"
-    url: /talks/    
+    url: /portfolio/    
 
   - title: "CV"
     url: /files/Resume.pdf
@@ -17,8 +17,8 @@ main:
 #  - title: "Teaching"
  #   url: /teaching/    
     
- # - title: "Portfolio"
- #   url: /portfolio/
+ # - title: "Talks"
+ #   url: /talks/
         
  # - title: "Blog Posts"
   #  url: /year-archive/

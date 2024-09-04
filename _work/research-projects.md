@@ -6,7 +6,7 @@ permalink: /work/research-projects
 location: "county, city"
 ---
 
-Binary Visualization for Detecting Benign & Malicious Files
+## Binary Visualization for Detecting Benign & Malicious Files
 ======
 *Using a machine learning model to train a neural network to be able to distinguish between malicious & benign PDFs through a binary visualization representation.* 
 

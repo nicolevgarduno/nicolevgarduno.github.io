@@ -1,8 +1,8 @@
 ---
 title: "Research"
-collection: teaching
+collection: work
 type: "Workshop"
-permalink: /teaching/2015-spring-teaching-1
+permalink: /work/2015-spring-teaching-1
 venue: "blahblah"
 date: 2024-01-01
 location: "county, city"

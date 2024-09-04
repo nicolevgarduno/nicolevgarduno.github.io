@@ -2,7 +2,7 @@
 title: "Research"
 collection: work
 type: "Workshop"
-permalink: /work/research projects
+permalink: /work/research-projects
 venue: "blahblah"
 date: 2024-01-01
 location: "county, city"

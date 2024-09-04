@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/2015-10-01-paper-title-number-3
 excerpt: 'Created a Python program to web scrape multiple websites and gather benign & malicious files.
 date: 2024-05-15
-venue: 'Birmingham-Southern College'
+venue: 'Journal 1'
 slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'Web scraping, convolutional neural networks, TensorFlow, and Python.'

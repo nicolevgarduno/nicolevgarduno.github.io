@@ -1,13 +1,13 @@
 ---
-title: #"Research"
+title: "Research"
 collection: work
 type: "Workshop"
 permalink: /work/research-projects
 location: "county, city"
 ---
 
-## Binary Visualization for Detecting Benign & Malicious Files
-======
+### Binary Visualization for Detecting Benign & Malicious Files
+
 *Using a machine learning model to train a neural network to be able to distinguish between malicious & benign PDFs through a binary visualization representation.* 
 
 With Python, I created a program to web scrape multiple websites and gather benign & malicious files. The program would then upload each website to [Binvis.io](https://binvis.io/#/) which would then convert the file into a visual representation by binary class.

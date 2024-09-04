@@ -6,7 +6,7 @@
 
 main:
   - title: "Work"
-    url: /publications/
+    url: /teaching/
 
   - title: "Photography"
     url: /portfolio/    
@@ -15,7 +15,7 @@ main:
     url: /files/Resume.pdf
 
 #  - title: "Teaching"
- #   url: /teaching/    
+ #   url: /publications/    
     
  # - title: "Talks"
  #   url: /talks/

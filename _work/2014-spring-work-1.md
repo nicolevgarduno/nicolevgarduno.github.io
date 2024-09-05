@@ -10,15 +10,15 @@ I have had the opportunity to work at a few companies to showcase my cybersecuri
 
 *May 2024 - June 2024* 
 
-With Python, I created a program to web scrape multiple websites and gather benign & malicious files. The program would then upload each website to [Binvis.io](https://binvis.io/#/) which would then convert the file into a visual representation by binary class.
+I shadowed a variety of IT teams including mainframe, support center, contact center, Citrix, workstation, procurement, and asset management. 
 
-The program would then train a neural network using TensorFlow and classify images by either benign or malicious tags. Testing included inputing user's files to run through program and test against the model to ensure user's digital safety. Program released a 93% accuracy rate.
+Such rotation allowed me to physically see the workflow in which IT functions on. It was an amazing opportunity to experience the innerconnections within the tech department which helped understand the importance of collaboration.
 
 ### Cybersecurity Analyst at Southern Reseach Insititue.
 
 *January 2024 - May 2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!!!
+After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
 
 My duties consisted of patchworking softwares and reaching out to company accounts who had possibly been phished. I also continued similar duties as my internship which included inventory control and device maintenance. 
 

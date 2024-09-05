@@ -23,6 +23,7 @@ This past May, I graduated cum laude from Birmingham-Southern College located in
 During college, I took several photography classes, where I developed (no pun intended) a real love for analog photography. Take a look at my portfolio [here](https://nicolevgarduno.github.io/photography/). 
 
 As a student, I participated in a number of projects ranging from front end development to using machine learning for more secure digital practices. To read more about my work and participation, please view [here](https://nicolevgarduno.github.io/work/research-projects).
+
 This website was designed using Jekyll. I have always leaned more into back-end developing, so stepping out of my comfort zone to create this website was a blast. That being said, if you see any happy accidents or have any suggestions, let me know! 
 
 I am now pursuing my Master's in Information Security with Artifical Intelligence at Carnegie Mellon University. 

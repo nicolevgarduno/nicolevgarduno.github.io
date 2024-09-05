@@ -263,6 +263,7 @@ defaults:
       comments: true
   # _photography
   - scope:
+      pathL ""
       type: photography
     values:
       layout: single

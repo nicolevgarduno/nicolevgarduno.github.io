@@ -4,3 +4,10 @@ title: "Photography"
 permalink: /photography/
 author_profile: true
 ---
+
+{% include base_path %}
+
+
+{% for post in site.photography %}
+  {% include archive-single.html %}
+{% endfor %}

@@ -217,7 +217,6 @@ collections:
     permalink: /:collection/:path/
   photography:
     output: true
-    permalink: /:collection/:path/
   talks:
     output: true
     permalink: /:collection/:path/

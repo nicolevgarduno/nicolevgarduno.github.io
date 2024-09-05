@@ -18,10 +18,12 @@ The program would then train a neural network using TensorFlow and classify imag
 
 *January 2024 - May 2024* 
 
-Coded a Tello Drone using Python and a machine learning model which implemented object-detection in order to process video footage and detect trash items and trash type.
+After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!!!
+
+My duties consisted of patchworking softwares and reaching out to company accounts who had possibly been phished. I also continued similar duties as my internship which included inventory control and device maintenance. 
 
 ### Cybersecurity Analyst Intern at Southern Reseach Insititue.
 
 *September 2023 - November 2023* 
 
-Coded a Tello Drone using Python and a machine learning model which implemented object-detection in order to process video footage and detect trash items and trash type.
+During my internship I worked with asset security, a critical function of securing the enterprise environment, which included keeping log of stored computers along with outputting new hire computer/ desktop set ups. I worked on imaging and configuring computers for staff, specifically on Windows computers, ensuring that new hires were easy to onboard. Along with new hires, I was tasked with making sure proper disposal of hardware for offboarding employees. 

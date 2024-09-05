@@ -10,61 +10,53 @@ I have been fortunate enough to recieve a number of awards, ranging from recogni
 
 *2024* 
 
-I shadowed a variety of IT teams including mainframe, support center, contact center, Citrix, workstation, procurement, and asset management. 
-
-Such rotation allowed me to physically see the workflow in which IT functions on. It was an amazing opportunity to experience the innerconnections within the tech department which helped understand the importance of collaboration.
+A CMU supported program which is dedicated to supporting future generations of STEM leaders. The program removes financial barriers to those underrepresented in STEM fields and provides holistic support to students.
 
 ### President's Service Award
 
 *2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Awarded to an individual of the graduating class showing exemplary work inside and outside of the classroom along with being a strong representation of the Birmingham-Southern College community.
 
 ### Phi Beta Kappa
 
 *2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+America’s most prestigious academic honor society, valuing the liberal arts and sciences education.
 
 ### Forstall Art Award
 
 *2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Voted by local art store as one of the favorite photography pieces within student art exhibit.
 
 ### Community Coordinator of the Year
 
 *2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+To a Residence Life house advisor who has led their team with the most leadership and provided strong support to Residence Life Staff.
 
 ### Mortar Board Honor Society
 
 *2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+National honor society recognizing college seniors for their exemplary scholarship, leadership and service.
 
 ### Omicron Delta Kappa Leadership Honor Society
 
 *2024* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Honor society recognizing superior leadership and character.
 
 ### Diversity & Inclusion Award
 
 *2023* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Accolade presented to individual that has demonstrated an outstanding commitment to advancing diversity, equity, and inclusion. The award recognizes efforts to foster inclusive environments, promote diversity within the campus community, and combat discrimination and bias. 
 
 ### President's Service Award
 
 *2024* 
-
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
-
-### Barbara McDaniel Undergraduate Scholarship
-
-*2023* 
 
 After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
 
@@ -72,22 +64,22 @@ After completing my internship at Southern Research Institute, I was invited to 
 
 *2023* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Awarded to a student organization that demonstrates an example for the student body along with strengthening the community. Awarded to We the Neighbors while I was serving as president.
 
 ### New Residential Advisor of the Year
 
 *2023* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Individual who has shown most potential and committment in their role as a residential advisor.
 
 ### Steven C. Andres Applied Computer Science Award
 
 *2023* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Student who demonstrates hard work with an interest in using their computational skills for the betterment of society.
 
 ### Grace Hopper Celebration Scholarship Recipient
 
 *2022* 
 
-After completing my internship at Southern Research Institute, I was invited to return as a part-time employee within the IT team. I was incredibly grateful for the opportunity as it was that internship that helped me realize that security was the path I wanted to pursue!
+Awarded by the AnitaB.org organization.

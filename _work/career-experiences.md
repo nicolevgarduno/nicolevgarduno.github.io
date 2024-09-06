@@ -4,7 +4,7 @@ collection: work
 type: "Career"
 permalink: /work/career-experiences
 ---
-I have had the opportunity to work at a few companies to showcase my cybersecurity skills. 
+I have had the opportunity to work at a few companies to showcase my cybersecurity skills.
 
 I am currently open to internship opportunities where I can highlight my skills in machine learning and security.
 

@@ -6,7 +6,7 @@ permalink: /work/career-experiences
 ---
 I have had the opportunity to work at a few companies to showcase my cybersecurity skills. 
 
-I am currently open to internship opportunities where I can highligth my skills in machine learning and security.
+I am currently open to internship opportunities where I can highlight my skills in machine learning and security.
 
 ### Technology Support Intern at BlueCross BlueShield Alabama
 

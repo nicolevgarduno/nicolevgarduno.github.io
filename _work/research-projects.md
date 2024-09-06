@@ -17,7 +17,7 @@ The program would then train a neural network using TensorFlow and classify imag
 
 ### Waste Drone
 
-*Created a flying drone that uses object deetection to analyze waste around sidewalks and roadways to minimize littering.* 
+*Created a flying drone that uses object detection to analyze waste around sidewalks and roadways to minimize littering.* 
 
 Coded a Tello Drone using Python and a machine learning model which implemented object-detection in order to process video footage and detect trash items and trash type.
 

@@ -4,7 +4,7 @@ collection: work
 type: "Awards"
 permalink: /work/awards
 ---
-I have been fortunate enough to recieve a number of awards, ranging from recognitions of my leadership, or acceptance to honor societies.
+I have been fortunate enough to recieve a number of awards, ranging from recognitions of my leadership to acceptance to honor societies.
 
 ### Rales Fellowship
 

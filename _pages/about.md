@@ -26,6 +26,6 @@ As a student, I participated in a number of projects ranging from front end deve
 
 This website was designed using Jekyll. I have always leaned more into back-end developing, so stepping out of my comfort zone to create this website was a blast. That being said, if you see any happy accidents or have any suggestions, let me know! 
 
-I am now pursuing my Master's in Information Security with Artifical Intelligence at Carnegie Mellon University. 
+I am now pursuing my Master's in Information Security with a focus in Artifical Intelligence at Carnegie Mellon University. 
 
 Thank you so much for visiting my website.

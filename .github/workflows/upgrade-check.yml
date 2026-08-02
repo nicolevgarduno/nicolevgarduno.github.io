@@ -15,7 +15,6 @@ on:
       - "assets/**"
       - "Gemfile"
       - "Gemfile.lock"
-      - "test/integration_upgrade_cli.sh"
       - ".github/workflows/upgrade-check.yml"
   pull_request:
     branches:
@@ -31,7 +30,6 @@ on:
       - "assets/**"
       - "Gemfile"
       - "Gemfile.lock"
-      - "test/integration_upgrade_cli.sh"
       - ".github/workflows/upgrade-check.yml"
 
 jobs:

@@ -1,0 +1,526 @@
+/*******************************************************************************
+ * Site-local overrides.
+ *
+ * Ports the look of the previous academicpages/minimal-mistakes site onto
+ * al-folio. Values here were lifted from that site's compiled stylesheet so the
+ * palette and type scale match rather than approximate.
+ *
+ * This is the ONLY place site-specific styling should live. It is loaded last
+ * from assets/css/main.scss, so everything here beats the gem partials.
+ ******************************************************************************/
+
+/* -----------------------------------------------------------------------------
+ * Design tokens
+ *
+ * $gray #7a8288 is the source color the old theme derived everything from:
+ *   text     = mix(black, gray, 40%) = #494e52
+ *   muted    = #7a8288
+ *   borders  = mix(white, gray, 90%) = #f2f3f3
+ *   links    = #52adc8   (hover #316878)
+ * -------------------------------------------------------------------------- */
+
+$nvg-text: #494e52;
+$nvg-muted: #7a8288;
+$nvg-border: #f2f3f3;
+$nvg-link: #52adc8;
+$nvg-link-hover: #316878;
+$nvg-sans: -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+
+/* Dark-mode counterparts. The old site had no dark mode; al-folio does, and a
+   half-ported theme looks broken, so these keep it coherent: same hues, flipped
+   lightness, accent lifted for contrast on dark. */
+$nvg-text-dark: #d8dade;
+$nvg-muted-dark: #9aa1a7;
+$nvg-border-dark: #2c3033;
+$nvg-bg-dark: #1b1e20;
+$nvg-link-dark: #7fc6dc;
+
+/* -----------------------------------------------------------------------------
+ * Theme variable overrides
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --global-text-color: #{$nvg-text};
+  --global-text-color-light: #{$nvg-muted};
+  --global-theme-color: #{$nvg-link};
+  --global-hover-color: #{$nvg-link-hover};
+  --global-divider-color: #{$nvg-border};
+  --global-footer-bg-color: #ffffff;
+  --global-footer-text-color: #{$nvg-muted};
+  --global-footer-link-color: #{$nvg-text};
+  --global-highlight-color: #{$nvg-link-hover};
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #{$nvg-bg-dark};
+  --global-text-color: #{$nvg-text-dark};
+  --global-text-color-light: #{$nvg-muted-dark};
+  --global-theme-color: #{$nvg-link-dark};
+  --global-hover-color: #{$nvg-link};
+  --global-divider-color: #{$nvg-border-dark};
+  --global-card-bg-color: #23272a;
+  --global-footer-bg-color: #{$nvg-bg-dark};
+  --global-footer-text-color: #{$nvg-muted-dark};
+  --global-footer-link-color: #{$nvg-text-dark};
+}
+
+/* -----------------------------------------------------------------------------
+ * Typography — system sans throughout, bold headings, old theme's type scale
+ * -------------------------------------------------------------------------- */
+
+body {
+  font-family: $nvg-sans;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post-title,
+.card-title {
+  font-family: $nvg-sans;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.563em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+/* The old site set generous space above headings and tight space below. */
+h2,
+h3,
+h4 {
+  margin: 2em 0 0.5em;
+}
+
+a {
+  text-decoration: none;
+
+  &:hover {
+    color: var(--global-hover-color);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Masthead — white, thin bottom rule, muted nav links, bold wordmark
+ * -------------------------------------------------------------------------- */
+
+.navbar {
+  background-color: var(--global-bg-color) !important;
+  border-bottom: 1px solid var(--global-divider-color);
+  backdrop-filter: none;
+}
+
+.navbar .nav-link {
+  color: $nvg-muted !important;
+  font-family: $nvg-sans;
+
+  &:hover,
+  &.active {
+    color: var(--global-text-color) !important;
+  }
+}
+
+html[data-theme="dark"] .navbar .nav-link {
+  color: $nvg-muted-dark !important;
+}
+
+.navbar-brand,
+.navbar .navbar-brand a {
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* -----------------------------------------------------------------------------
+ * Footer — the old site's footer was light, not a dark slab
+ * -------------------------------------------------------------------------- */
+
+footer.fixed-bottom,
+footer.sticky-bottom {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+/* -----------------------------------------------------------------------------
+ * Sidebar profile (see _layouts/about.liquid)
+ *
+ * The portrait is an ellipse: border-radius 50% on a portrait-aspect image,
+ * with the old theme's 5px inset and hairline border.
+ * -------------------------------------------------------------------------- */
+
+.nvg-sidebar {
+  .nvg-avatar img {
+    width: 100%;
+    max-width: 175px;
+    height: auto;
+    padding: 5px;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 50%;
+  }
+
+  .nvg-name {
+    margin: 0.75rem 0 0.5rem;
+    font-family: $nvg-sans;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .nvg-pronouns {
+    margin: 0 0 0.75rem;
+    font-size: 0.75em;
+    color: var(--global-text-color-light);
+  }
+
+  .nvg-bio {
+    margin: 0 0 1.25rem;
+    font-size: 0.85em;
+    line-height: 1.5;
+  }
+
+  .nvg-meta {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.85em;
+
+    li {
+      margin-bottom: 0.5rem;
+      color: var(--global-text-color);
+    }
+
+    i {
+      width: 1.25em;
+      margin-right: 0.5rem;
+      text-align: center;
+      color: var(--global-text-color-light);
+    }
+
+    a {
+      color: var(--global-text-color);
+
+      &:hover {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+/* Two-column shell: sidebar left, content right. Collapses under 1024px, which
+   is the breakpoint the old theme used ($sidebar-screen-min-width). */
+.nvg-shell {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+@media (max-width: 1023px) {
+  .nvg-shell {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+  }
+
+  .nvg-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0 1.25rem;
+
+    .nvg-avatar {
+      flex: 0 0 110px;
+    }
+
+    .nvg-identity {
+      flex: 1 1 240px;
+    }
+
+    .nvg-meta {
+      flex: 1 1 100%;
+      margin-top: 0.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0 1.25rem;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Project cards — flatten to match the old site's low-chrome feel
+ * -------------------------------------------------------------------------- */
+
+.projects .card {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  box-shadow: none;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-text-color-light);
+    transform: none;
+  }
+
+  .card-title {
+    font-size: 1em;
+  }
+
+  .card-text {
+    font-size: 0.85em;
+    color: var(--global-text-color-light);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Back link on collection detail pages (projects, news)
+ * -------------------------------------------------------------------------- */
+
+.nvg-back {
+  margin-bottom: 1.5rem;
+  font-size: 0.85em;
+
+  a {
+    color: var(--global-text-color-light);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+
+  i {
+    margin-right: 0.4rem;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * /news/ — media list: text left, optional thumbnail right
+ * -------------------------------------------------------------------------- */
+
+.nvg-news-list {
+  margin-top: 2rem;
+}
+
+.nvg-news-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.nvg-news-body {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.nvg-news-headline {
+  margin: 0 0 0.4rem;
+  font-size: 1.25em;
+  line-height: 1.25;
+
+  a {
+    color: var(--global-text-color);
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+.nvg-news-desc {
+  margin: 0 0 0.75rem;
+  color: var(--global-text-color);
+}
+
+.nvg-news-date {
+  margin: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.85em;
+}
+
+.nvg-news-thumb {
+  flex: 0 0 200px;
+  line-height: 0;
+
+  img {
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--global-divider-color);
+  }
+}
+
+.nvg-news-hero {
+  margin-bottom: 1.5rem;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.nvg-news-external {
+  margin-top: 1.5rem;
+
+  i {
+    margin-left: 0.35rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .nvg-news-entry {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .nvg-news-thumb {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * /projects/ — category filter pills + content-sized masonry
+ * -------------------------------------------------------------------------- */
+
+.nvg-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.nvg-filter-btn {
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--global-text-color-light);
+  font-family: $nvg-sans;
+  font-size: 0.85em;
+  line-height: 1.4;
+  cursor: pointer;
+  transition:
+    color 0.15s ease,
+    border-color 0.15s ease,
+    background-color 0.15s ease;
+
+  &:hover {
+    color: var(--global-text-color);
+    border-color: var(--global-text-color-light);
+  }
+
+  &.is-active {
+    background-color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+    color: #fff;
+  }
+}
+
+/* Masonry grid (see _pages/projects.md). Widths here drive the column count;
+   al_folio_core's masonry.js positions the items with horizontalOrder, so cards
+   read left-to-right in source order while keeping their own heights. */
+.nvg-projects-grid {
+  margin-top: 0.5rem;
+
+  .grid-sizer,
+  .grid-item {
+    width: calc((100% - 20px) / 3); /* masonry.js sets gutter: 10 */
+    margin-bottom: 1.25rem;
+  }
+
+  /* Undo the Bootstrap column the card include wraps each card in. */
+  .grid-item > .col {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    flex: none;
+  }
+
+  .card {
+    height: auto !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .nvg-projects-grid .grid-sizer,
+  .nvg-projects-grid .grid-item {
+    width: calc((100% - 10px) / 2);
+  }
+}
+
+@media (max-width: 575px) {
+  .nvg-projects-grid .grid-sizer,
+  .nvg-projects-grid .grid-item {
+    width: 100%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * CV page
+ * -------------------------------------------------------------------------- */
+
+/* The gem renders an entry title as a plain <h6 class="title">, or wraps it in an
+   <a> when the entry has a url — so only linked entries picked up the accent
+   color. This makes every title accented, linked or not. */
+.cv h6.title,
+.cv h6.title a {
+  color: var(--global-theme-color);
+}
+
+/* -----------------------------------------------------------------------------
+ * Link buttons on project detail pages
+ *
+ * Replaces the old inline "**Links** — [Code](...)" line, which disappeared into
+ * the body text.
+ * -------------------------------------------------------------------------- */
+
+.nvg-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2.5rem 0 1rem;
+}
+
+.nvg-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 2px;
+  color: var(--global-theme-color);
+  font-size: 1.05em;
+  font-weight: 600;
+  line-height: 1.4;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
+
+  &:hover {
+    background-color: var(--global-theme-color);
+    color: #fff;
+    text-decoration: none;
+  }
+
+  i {
+    font-size: 0.95em;
+  }
+}

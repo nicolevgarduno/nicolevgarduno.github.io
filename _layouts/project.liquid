@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% comment %}
+  Detail page for a _projects item.
+
+  Mirrors al_folio_core's _layouts/page.liquid, with a "back" link above the title
+  so a project opened from the projects grid (or the home page) has a way out.
+  Kept as its own layout rather than forking page.liquid, so every other page on
+  the site keeps using the gem's version untouched.
+{% endcomment %}
+
+{% if page._styles %}
+  <!-- Page/Post style -->
+  <style type="text/css">
+    {{ page._styles }}
+  </style>
+{% endif %}
+
+<div class="post">
+  <p class="nvg-back">
+    <a href="{{ '/projects/' | relative_url }}"><i class="fa-solid fa-arrow-left"></i>All projects</a>
+  </p>
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-description">{{ page.description }}</p>
+  </header>
+
+  <article>
+    {{ content }}
+  </article>
+
+  {% if page.related_publications %}
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography --cited_in_order %}
+    </div>
+  {% endif %}
+</div>

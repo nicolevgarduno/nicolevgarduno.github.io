@@ -19,3 +19,10 @@ vendor
 # Python bytecode from bin/ helper scripts
 __pycache__/
 *.pyc
+
+# Personal maintenance notes — kept out of git so they stay private to this machine.
+MAINTAINING.md
+LLM_CONTEXT.md
+
+# Claude Code local settings (machine-specific)
+.claude/settings.local.json

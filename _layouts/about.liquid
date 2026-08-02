@@ -1,0 +1,129 @@
+---
+layout: default
+---
+{% comment %}
+  Local override of al_folio_core's _layouts/about.liquid.
+
+  Why this exists: the gem layout floats the portrait to the right of the bio and
+  renders social links near the footer. This site uses the persistent left-sidebar
+  profile from the previous academicpages build instead — portrait, name, pronouns,
+  short bio, then an icon list of affiliation and links.
+
+  Everything below the two-column shell (news / posts / papers) is kept identical
+  to the gem version so those features keep working. When al_folio_core updates,
+  diff this file against the gem's about.liquid and re-apply any changes.
+
+  Sidebar content comes from `page.profile` in _pages/about.md and _data/socials.yml.
+{% endcomment %}
+
+<div class="post">
+  <div class="nvg-shell">
+    <aside class="nvg-sidebar">
+      {% if page.profile.image %}
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        <div class="nvg-avatar">
+          {%
+            include figure.liquid loading="eager" path=profile_image_path class="nvg-avatar-img" sizes="175px"
+            alt=page.profile.image_alt cache_bust=true
+          %}
+        </div>
+      {% endif %}
+
+      <div class="nvg-identity">
+        {% comment %}
+          Always the full name here, never site.title — site.title is the short
+          "nvg" wordmark used in the masthead.
+        {% endcomment %}
+        <p class="nvg-name">
+          {{ site.first_name }}
+          {{ site.middle_name }}
+          {{ site.last_name }}
+        </p>
+
+        {% if page.profile.pronouns %}
+          <p class="nvg-pronouns">{{ page.profile.pronouns }}</p>
+        {% endif %}
+
+        {% if page.profile.bio %}
+          <p class="nvg-bio">{{ page.profile.bio }}</p>
+        {% endif %}
+      </div>
+
+      <ul class="nvg-meta">
+        {% if page.profile.location %}
+          <li><i class="fa-solid fa-location-dot"></i>{{ page.profile.location }}</li>
+        {% endif %}
+        {% if page.profile.employer %}
+          <li>
+            {% if page.profile.employer_url %}
+              <i class="fa-solid fa-building-columns"></i><a href="{{ page.profile.employer_url }}">{{ page.profile.employer }}</a>
+            {% else %}
+              <i class="fa-solid fa-building-columns"></i>{{ page.profile.employer }}
+            {% endif %}
+          </li>
+        {% endif %}
+        {% if site.data.socials.linkedin_username %}
+          <li>
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}">LinkedIn</a>
+          </li>
+        {% endif %}
+        {% if site.data.socials.github_username %}
+          <li>
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/{{ site.data.socials.github_username }}">GitHub</a>
+          </li>
+        {% endif %}
+        {% if site.data.socials.scholar_userid %}
+          <li>
+            <i class="ai ai-google-scholar"></i>
+            <a href="https://scholar.google.com/citations?user={{ site.data.socials.scholar_userid }}">Google Scholar</a>
+          </li>
+        {% endif %}
+      </ul>
+    </aside>
+
+    <article class="nvg-main">
+      <header class="post-header">
+        <h1 class="post-title">{{ page.headline | default: page.title }}</h1>
+        {% if page.subtitle %}
+          <p class="desc">{{ page.subtitle }}</p>
+        {% endif %}
+      </header>
+
+      {{ content }}
+
+      <!-- News -->
+      {% if page.announcements and page.announcements.enabled %}
+        <h2>
+          <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        </h2>
+        {% include news.liquid limit=true %}
+      {% endif %}
+
+      <!-- Latest posts -->
+      {% if page.latest_posts and page.latest_posts.enabled %}
+        <h2>
+          <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        </h2>
+        {% include latest_posts.liquid %}
+      {% endif %}
+
+      <!-- Selected papers -->
+      {% if page.selected_papers %}
+        <h2>
+          <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        </h2>
+        {% include selected_papers.liquid %}
+      {% endif %}
+
+      {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+        {% if site.plugins contains 'al_newsletter' %}
+          {% include plugins/al_newsletter_form_center_margin.liquid %}
+        {% else %}
+          {% include newsletter.liquid center=true %}
+        {% endif %}
+      {% endif %}
+    </article>
+  </div>
+</div>

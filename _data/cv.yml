@@ -1,189 +1,246 @@
+# CV data, rendered by _pages/cv.md via the local _layouts/cv.liquid.
+#
+# Section ORDER is controlled in _layouts/cv.liquid, not here:
+#   Professional Summary -> Experience -> Projects -> Education -> Leadership -> Awards
+#
+# Which renderer each section gets is also set there. Experience and Leadership both
+# use the experience renderer, so both get date + location badges. Entries for those
+# two use: company / position / start_date / end_date / location / highlights.
+#
+# Dates are "YYYY-MM" or "YYYY". Omit end_date to render as "Present".
+#
+# NOTE: `name`, `email`, `phone`, `website` and `location` are intentionally left off
+# the top level — setting any of them makes the gem render a "Contact Information"
+# card, and contact details live in the home-page sidebar instead.
+
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
-
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
-
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+  summary: >
+    Post-master's researcher at Los Alamos National Laboratory working on adversarial AI and
+    machine learning, at the intersection of computer vision and the physical world. Interested
+    in how AI systems fail under real-world adversarial conditions, and in supporting
+    first-generation and underrepresented students in STEM.
 
   sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
-
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      # TODO: confirm the start date of the post-master's appointment.
+      - company: Los Alamos National Laboratory
+        position: Post-Master's Researcher
+        url: https://www.lanl.gov/
+        location: Los Alamos, NM
+        start_date: 2026-01
         highlights:
-          - Relativity
-          - Description 2.
+          - "Adversarial AI and machine learning research with the A-4 Advanced Research in Cyber Systems group."
+          - 'First-authored "Giving AI a Headache," accepted at SPIE 2026, on acoustic adversarial attacks against object detection.'
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Los Alamos National Laboratory
+        position: Graduate Research Assistant
+        location: Los Alamos, NM
+        start_date: 2025-05
+        end_date: 2025-12
         highlights:
-          - Description 1.
-          - Description 2.
+          - "Joined the A-4 Advanced Research in Cyber Systems group through the Cybersecurity School Research Program."
+          - "Studied how sound degrades image stabilization in camera sensors, causing object detection inference to fail."
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+      # Same-year roles use a single `date:` so they render as "2024" rather than "2024 - 2024".
+      - company: BlueCross BlueShield of Alabama
+        position: Technology Support Intern
+        location: Birmingham, AL
+        date: 2024
         highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - "Rotated through mainframe, support center, contact center, Citrix, workstation, procurement, and asset management teams."
+
+      - company: Southern Research Institute
+        position: Cybersecurity Analyst
+        location: Birmingham, AL
+        date: 2024
+        highlights:
+          - "Patched software and handled response for company accounts targeted by phishing."
+          - "Contributed to the company's disaster recovery report, applying information assurance practice."
+
+      - company: Southern Research Institute
+        position: Cybersecurity Analyst Intern
+        location: Birmingham, AL
+        date: 2023
+        highlights:
+          - "Managed asset security: imaging and configuring Windows machines for onboarding, and secure hardware disposal for offboarding."
+
+    # Same order as the /projects/ page. `url` makes each title a link to the repo.
+    Projects:
+      - name: Giving AI a Headache
+        url: https://github.com/nicolevgarduno/Giving-AI-a-Headache
+        date: 2026
+        summary: Degrading YOLO11 object detection by acoustically resonating camera hardware. Published at SPIE 2026.
+
+      - name: Research Agent
+        url: https://github.com/nicolevgarduno/research-agent
+        date: 2026
+        summary: Sends a daily email digest of the research and news most relevant to your specified interests.
+
+      - name: GoNoGo
+        url: https://github.com/nicolevgarduno/GoNoGo
+        date: 2025
+        summary: CI/CD pipeline that only lets code through to an expensive downstream job if it clears a static-analysis quality gate first.
+
+      - name: StayAwake
+        url: https://github.com/nicolevgarduno/StayAwake
+        date: 2025
+        summary: Real-time attention and drowsiness detector using eye closure, yawning, and head orientation, with per-user calibration.
+
+      - name: FIFA Scouting Report
+        url: https://github.com/nicolevgarduno/FIFA-Scouting-Report
+        date: 2024
+        summary: Predicting FIFA player market value from skill attributes, comparing linear regression, random forest, MLP, and CNN.
+
+      - name: Benign and Malicious PDF Detection
+        url: https://github.com/nicolevgarduno/Benign-and-Malicious-PDF-Detection
+        date: 2024
+        summary: Converts each PDF into a binary visualization and trains a CNN to classify it as benign or malicious.
+
+      - name: Waste Detection Drone
+        url: https://github.com/melvinczyk/Waste-detection-drone
+        date: 2024
+        summary: Real-time aerial trash detection from a DJI Tello using YOLOv5.
+
+    Education:
+      - institution: Carnegie Mellon University
+        url: https://www.cmu.edu/ini/
+        studyType: M.S. Information Security, focus in AI Engineering
+        start_date: 2024-08
+        end_date: 2025-12
+        location: Pittsburgh, PA
+
+      - institution: Birmingham-Southern College
+        studyType: B.S. Applied Computer Science
+        start_date: 2021
+        end_date: 2024
+        location: Birmingham, AL
+
+    # Uses the experience renderer, so these take company/position/dates like Experience.
+    # Locations are intentionally omitted here.
+    Leadership:
+      - company: Society of Hispanic Professional Engineers, New Mexico
+        position: Vice President of Operations
+        url: https://shpenewmexico.org/
+        start_date: 2026-07
+        highlights:
+          - "Oversee operations for SHPE's New Mexico Professional Chapter, including event logistics and board coordination."
+          - "Manage volunteer coordination in support of the executive board."
+          - "Track membership and chapter operations to support board decision-making."
+
+      - company: CMU Rales Alumni Network
+        position: Co-Lead
+        start_date: 2026-01
+        highlights:
+          - "Helped start the initiative for a CMU Rales Alumni Network."
+          - "Facilitate networking events for current alumni."
+          - "Oversee and welcome the pipeline from student to alumni."
+          - "Help organize events connecting current students with alumni."
+
+      - company: Society of Hispanic Engineers, Carnegie Mellon
+        position: Graduate Chair
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - "Built events designed for CMU's graduate population, focused on community and networking."
+
+      - company: INI Alumni Leadership Council
+        position: Student Representative
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - "Cultivated alumni culture for the department's leadership council and represented student needs."
+
+      - company: Women@INI
+        position: Chair
+        start_date: 2024
+        end_date: 2025
+        highlights:
+          - "Promoted the advancement of women in technology across the Information Networking Institute."
+
+      - company: Cross Culture Committee
+        position: President
+        start_date: 2022
+        end_date: 2024
+        highlights:
+          - "Oversaw seven multicultural organizations, serving as liaison between them and campus leadership."
+
+      - company: We the Neighbors
+        position: President
+        start_date: 2022
+        end_date: 2024
+        highlights:
+          - "Led the college's poverty and homelessness organization, partnering with area non-profits on drives, fundraisers, and talks."
+
+      - company: Residence Life
+        position: Freshman Dorm House Advisor
+        start_date: 2022
+        end_date: 2024
+        highlights:
+          - "Oversaw freshman residents and building RAs, managed building finances and programming."
+
+      - company: Bonner Leaders
+        position: Bonner Leader
+        start_date: 2021
+        end_date: 2024
+        highlights:
+          - "National program supporting low-income, first-generation, and underrepresented students through civic engagement."
 
     Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+      - title: Rales Fellowship
+        awarder: Carnegie Mellon University
+        date: 2024
+        summary: Supports future generations of STEM leaders, removing financial barriers for those underrepresented in STEM.
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+      - title: Phi Beta Kappa
+        awarder: Phi Beta Kappa Society
+        date: 2024
+        summary: America's most prestigious academic honor society, valuing liberal arts and sciences education.
 
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+      - title: President's Service Award
+        awarder: Birmingham-Southern College
+        date: 2024
+        summary: Awarded to a graduating student showing exemplary work inside and outside the classroom.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+      - title: Mortar Board Honor Society
+        awarder: Mortar Board
+        date: 2024
+        summary: Recognizes college seniors for exemplary scholarship, leadership, and service.
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+      - title: Omicron Delta Kappa Leadership Honor Society
+        awarder: Omicron Delta Kappa
+        date: 2024
+        summary: Honor society recognizing superior leadership and character.
 
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - title: Community Coordinator of the Year
+        awarder: Birmingham-Southern College Residence Life
+        date: 2024
+        summary: To the house advisor who led their team with the most leadership and support.
 
-    Languages:
-      - name: German
-        summary: "Native speaker"
+      - title: Forstall Art Award
+        awarder: Student art exhibit
+        date: 2024
+        summary: Voted one of the favorite photography pieces in the student art exhibit.
 
-      - name: English
-        summary: "Fluent"
+      - title: Diversity & Inclusion Award
+        awarder: Birmingham-Southern College
+        date: 2023
+        summary: For outstanding commitment to advancing diversity, equity, and inclusion.
 
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - title: Dudley Long Leadership Award
+        awarder: Birmingham-Southern College
+        date: 2023
+        summary: Awarded to We the Neighbors during my term as president, for setting an example for the student body.
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+      - title: Steven C. Andres Applied Computer Science Award
+        awarder: Birmingham-Southern College
+        date: 2023
+        summary: For a student using their computational skills for the betterment of society.
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+      - title: New Residential Advisor of the Year
+        awarder: Birmingham-Southern College Residence Life
+        date: 2023
+        summary: For the most potential and commitment shown as a residential advisor.
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+      - title: Grace Hopper Celebration Scholarship
+        awarder: AnitaB.org
+        date: 2022

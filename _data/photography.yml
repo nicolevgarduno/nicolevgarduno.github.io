@@ -1,0 +1,142 @@
+# Photos shown on /photography/, in the order listed here.
+#
+# Add a photo: drop the file in assets/img/photography/ and append an entry.
+#   - path: assets/img/photography/your-photo.jpg
+#     alt: short description for screen readers   # optional
+#     caption: shown in the lightbox              # optional
+#
+# Imported from the previous site; originals were resized to 1600px long edge.
+
+- path: assets/img/photography/amarillo.jpg
+  alt: amarillo
+  caption: amarillo — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/beach.jpg
+  alt: beach
+  caption: beach — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/belltower.jpg
+  alt: belltower
+  caption: belltower — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/bike.jpg
+  alt: bike
+  caption: bike — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/camry.jpg
+  alt: camry
+  caption: camry — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/comunidad.jpg
+  alt: comunidad
+  caption: comunidad — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/graduation.jpg
+  alt: graduation
+  caption: graduation — shot on a Canon AE-1 with Kodak Portra
+
+- path: assets/img/photography/graduation-2.jpg
+  alt: graduation
+  caption: graduation — shot on a Canon AE-1 with Kodak Portra
+
+- path: assets/img/photography/graduation-3.jpg
+  alt: graduation
+  caption: graduation — shot on a Canon AE-1 with Kodak Portra
+
+- path: assets/img/photography/guys.jpg
+  alt: guys
+  caption: guys — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/house.jpg
+  alt: house
+  caption: house — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/one-last-walk.jpg
+  alt: one last walk
+  caption: one last walk — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/leaves.jpg
+  alt: leaves
+  caption: leaves — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/mexico.jpg
+  alt: mexico
+  caption: mexico — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/molly.jpg
+  alt: molly
+  caption: molly — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/nothing-matters.jpg
+  alt: nothing matters
+  caption: nothing matters — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/philly.jpg
+  alt: philly
+  caption: philly — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/roommates.jpg
+  alt: roommates
+  caption: roommates — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/pinata.jpg
+  alt: piñata
+  caption: piñata — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/point.jpg
+  alt: point
+  caption: point — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/rode-signs.jpg
+  alt: rode signs
+  caption: rode signs — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/running.jpg
+  alt: running
+  caption: running — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/soulmate.jpg
+  alt: soulmate
+  caption: soulmate — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/throw.jpg
+  alt: throw
+  caption: throw — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/train.jpg
+  alt: train
+  caption: train — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/tree.jpg
+  alt: tree
+  caption: tree — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/velas.jpg
+  alt: velas
+  caption: velas — shot on a Minolta x-700 with HP5 Ilford film
+
+- path: assets/img/photography/wholey.jpg
+  alt: wholey
+  caption: wholey — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/window.jpg
+  alt: window
+  caption: window — shot on a Canon AE-1 with HP5 Ilford film
+
+- path: assets/img/photography/roll-01.jpg
+  alt: film photograph
+
+- path: assets/img/photography/roll-02.jpg
+  alt: film photograph
+
+- path: assets/img/photography/roll-03.jpg
+  alt: film photograph
+
+- path: assets/img/photography/roll-04.jpg
+  alt: film photograph
+
+- path: assets/img/photography/roll-05.jpg
+  alt: film photograph
+
+- path: assets/img/photography/roll-06.jpg
+  alt: film photograph

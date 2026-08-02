@@ -76,7 +76,10 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          # No `cache: "pip"` — that requires a requirements.txt/pyproject.toml to hash as a
+          # cache key, which this repo doesn't have (Python here is only used for the single
+          # `pip3 install nbconvert` call below). With cache enabled and no lockfile,
+          # actions/setup-python hard-fails instead of just skipping the cache.
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
         with:

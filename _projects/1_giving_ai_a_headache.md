@@ -43,7 +43,7 @@ First-authored, published at SPIE 2026, with Maksim Ekin Eren, Milo Prisbrey, Be
   </a>
   <a class="nvg-link-btn" href="https://github.com/nicolevgarduno/Giving-AI-a-Headache">
     <i class="fa-brands fa-github"></i>
-    Code
+    Write-Up
   </a>
 </div>
 

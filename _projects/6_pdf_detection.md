@@ -5,7 +5,7 @@ description: Turning PDFs into binary visualizations and training a CNN to tell 
 img: assets/img/projects/pdf-detection.jpg
 importance: 6
 featured: false
-category: Machine Learning, Cybersecurity
+category: Machine Learning, Cybersecurity, Adversarial AI
 date: 2024-05-01
 github: https://github.com/nicolevgarduno/Benign-and-Malicious-PDF-Detection
 ---

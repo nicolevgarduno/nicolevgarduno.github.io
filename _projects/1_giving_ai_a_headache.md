@@ -10,11 +10,11 @@ github: https://github.com/nicolevgarduno/Giving-AI-a-Headache
 arxiv: https://arxiv.org/abs/2606.14658
 ---
 
-Most adversarial attacks on object detection work in the digital domain — perturb the pixels, fool the model. This one never touches the image data at all. It attacks the camera: sound is used to physically resonate the device, and that motion falls outside what the camera's internal stabilization system was built to correct. The stabilizer compensates anyway, and in doing so writes artifacts into the frame. Downstream, YOLO11 misclassifies objects, misses targets, and hallucinates ones that were never there.
+Most adversarial attacks on object detection work in the digital domain; perturb the pixels, fool the model. But we studied how sound can be used to physically resonate a device, and that motion falls outside what the camera's internal stabilization system was built to correct. The stabilizer compensates anyway, and in doing so writes artifacts into the frame. Downstream, YOLO11 misclassifies objects, misses targets, and hallucinates ones that were never there.
 
-Earlier work in this space used ultrasonic frequencies above 20 kHz, which attenuate quickly and confine the attack to short range. We went the other direction — into the audible band below 20 kHz — and ran physical experiments against an off-the-shelf camera and an unmodified detection model, then looked at which image and object features actually drive the vulnerability.
+Earlier work in this space used ultrasonic frequencies above 20 kHz, which attenuate quickly and confine the attack to short range. We looked at frequencies in the audible band below 20 kHz and ran physical experiments against an off-the-shelf camera and an unmodified detection model, then looked at which image and object features actually drive the vulnerability.
 
-The interesting part is where the attack lives. There's no adversarial patch to detect, no modified input to sanitize, nothing anomalous in the model's weights or pipeline. The failure is introduced upstream of everything a conventional defense inspects — which is exactly what makes it worth characterizing before someone else does.
+The failure is introduced upstream of everything a conventional defense inspects.
 
 First-authored, published at SPIE 2026, with Maksim Ekin Eren, Milo Prisbrey, Ben Migliori, and Michael Teti.
 

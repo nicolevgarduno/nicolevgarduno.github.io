@@ -26,6 +26,6 @@ Splitting the orchestration, analysis, and compute planes across distinct cluste
 <div class="nvg-links">
   <a class="nvg-link-btn" href="https://github.com/nicolevgarduno/GoNoGo">
     <i class="fa-brands fa-github"></i>
-    Code
+    Write-Up
   </a>
 </div>

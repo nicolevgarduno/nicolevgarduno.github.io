@@ -39,7 +39,7 @@ latest_posts:
 
 Hi! I'm a post-master's researcher at LANL's Advanced Research for Cyber Systems group where I work on adversarial AI and machine learning — mostly at the intersection of computer vision and the physical world.
 
-I earned my M.S. in Information Security with a focus in AI Engineering at Carnegie Mellon as a [Rales Fellow](https://www.cmu.edu/graduate/rales-fellows/bios/nicole-villavicencio-garduno), and studied Applied Computer Science at Birmingham-Southern College. I'm interested in how AI systems fail in the physical world, and what that means for building ones that are actually trustworthy under adversarial conditions.
+I earned my M.S. in Information Security with a focus in AI Engineering at Carnegie Mellon as a [Rales Fellow](https://www.cmu.edu/graduate/rales-fellows), and studied Applied Computer Science at Birmingham-Southern College. I'm interested in how AI systems fail in the physical world, and what that means for building ones that are actually trustworthy under adversarial conditions.
 
 Outside of trying to break things, I am incredibly interested in supporting first-generation minorities in STEM. I am the Vice President of Operations for the [NM Society of Hispanic Professional Engineers](https://shpenewmexico.org/) Chapter and a co-lead for the CMU Rales Alumni Network.
 

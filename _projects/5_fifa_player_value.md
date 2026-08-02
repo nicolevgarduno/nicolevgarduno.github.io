@@ -12,9 +12,9 @@ date: 2024-08-01
 
 A comparison study: how well can a player's market value be predicted from their recorded skill attributes, and does model complexity actually buy accuracy on a problem like this one?
 
-Four approaches were evaluated against the same dataset — linear regression as a baseline, random forest, a multilayer perceptron, and a CNN. The framing question is whether the added capacity of the neural approaches pays off on structured tabular attributes, or whether a well-specified tree ensemble is the more honest answer for this shape of data.
+Four approaches were evaluated against the same dataset: linear regression as a baseline, random forest, a multilayer perceptron, and a CNN. The framing question is whether the added capacity of the neural approaches pays off on structured tabular attributes, or whether a well-specified tree ensemble is the more honest answer for this shape of data.
 
-This page is a summary of the write-up rather than a runnable notebook.
+This page is a summary of the write-up rather than a runnable notebook due to university's academic-honesty policy. I'm glad to walk through the implementation in an interview or grant repo access on request.
 
 <div class="row justify-content-center mt-4">
   <div class="col-sm-10 mt-3 mt-md-0">

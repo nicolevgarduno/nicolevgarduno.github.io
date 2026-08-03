@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-headline: Hello, world! My name is Nicole.
+headline: hello, world! my name is Nicole.
 permalink: /
 
 profile:
@@ -35,9 +35,9 @@ latest_posts:
 
 🎞️ In my free time, I love taking and developing film.
 
-## About me
+## about me
 
-Hi! I'm a post-master's researcher at LANL's Advanced Research for Cyber Systems group where I work on adversarial AI and machine learning — mostly at the intersection of computer vision and the physical world.
+I'm a post-master's researcher at LANL's Advanced Research for Cyber Systems group where I work on adversarial AI and machine learning — mostly at the intersection of computer vision and the physical world.
 
 I earned my M.S. in Information Security with a focus in AI Engineering at Carnegie Mellon as a [Rales Fellow](https://www.cmu.edu/graduate/rales-fellows), and studied Applied Computer Science at Birmingham-Southern College. I'm interested in how AI systems fail in the physical world, and what that means for building ones that are actually trustworthy under adversarial conditions.
 
@@ -45,7 +45,7 @@ Outside of trying to break things, I am incredibly interested in supporting firs
 
 Always happy to connect with people working in adversarial ML, computer vision, mentorship, and inclusivity in STEM fields.
 
-## Selected projects
+## selected projects
 
 A few things I've built and broken. [See all &rarr;]({{ '/projects/' | relative_url }})
 

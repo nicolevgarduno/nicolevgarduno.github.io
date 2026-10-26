@@ -1,7 +1,7 @@
 ---
 layout: news_item
 title: "Began new position at MITRE"
-date: 2026-07-01
+date: 2026-08-28
 description: "Began new position as an AI Security Engineer within the AI Assurance & Governance team"
 inline: true # keeps the home-page list as compact one-liners
 external_url: https://www.mitre.org/focus-areas/artificial-intelligence/ai-assurance

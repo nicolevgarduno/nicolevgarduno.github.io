@@ -8,10 +8,10 @@ profile:
   image: prof_pic.jpg
   image_alt: Nicole Villavicencio-Garduño
   pronouns: she/her
-  bio: Post-master's researcher working on adversarial AI and machine learning.
-  location: Los Alamos, NM
-  employer: Los Alamos National Laboratory
-  employer_url: https://www.lanl.gov/
+  bio: AI Security Engineer working on counter AI.
+  location: Washington, D.C.
+  employer: MITRE
+  employer_url: https://www.mitre.org/
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false # social links live in the sidebar instead (see _layouts/about.liquid)
@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-🔬 I work on adversarial AI and machine learning at Los Alamos National Laboratory.
+🔬 I'm an AI Security Engineer at MITRE.
 
 💻 My research sits at the intersection of computer vision and the physical world — mostly how object detection models can be made to fail.
 
@@ -37,7 +37,7 @@ latest_posts:
 
 ## About me
 
-Hi! I'm a post-master's researcher at LANL's Advanced Research for Cyber Systems group where I work on adversarial AI and machine learning — mostly at the intersection of computer vision and the physical world.
+Hi! I recently joined MITRE's AI, Autonomy, & Data group as an AI Security Engineer. Previously, I was a post-master's researcher in LANL's Advanced Research for Cyber Systems group where I worked on adversarial AI and machine learning — mostly at the intersection of computer vision and the physical world.
 
 I earned my M.S. in Information Security with a focus in AI Engineering at Carnegie Mellon as a [Rales Fellow](https://www.cmu.edu/graduate/rales-fellows/bios/nicole-villavicencio-garduno), and studied Applied Computer Science at Birmingham-Southern College. I'm interested in how AI systems fail in the physical world, and what that means for building ones that are actually trustworthy under adversarial conditions.
 
